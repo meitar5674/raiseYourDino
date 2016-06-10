@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		A94A9E8F1D09CAB1001074B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A9E8E1D09CAB1001074B8 /* AppDelegate.swift */; };
-		A94A9E911D09CAB1001074B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A9E901D09CAB1001074B8 /* ViewController.swift */; };
-		A94A9E941D09CAB1001074B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94A9E921D09CAB1001074B8 /* Main.storyboard */; };
+		A94A9E911D09CAB1001074B8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A9E901D09CAB1001074B8 /* HomeView.swift */; };
 		A94A9E961D09CAB1001074B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94A9E951D09CAB1001074B8 /* Assets.xcassets */; };
 		A94A9E991D09CAB1001074B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94A9E971D09CAB1001074B8 /* LaunchScreen.storyboard */; };
+		A94A9EA11D09CB08001074B8 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94A9EA01D09CB08001074B8 /* HomeView.xib */; };
+		A94A9EB01D09CBEC001074B8 /* EggStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A9EAF1D09CBEC001074B8 /* EggStatus.swift */; };
+		A94A9EB21D09CC05001074B8 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A9EB11D09CC05001074B8 /* Properties.swift */; };
+		A94A9EB51D09D2AA001074B8 /* DinoStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A9EB31D09D2AA001074B8 /* DinoStats.swift */; };
+		A94A9EBC1D09F60B001074B8 /* DinoStats.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94A9EBB1D09F60B001074B8 /* DinoStats.xib */; };
+		A94A9EC01D0A19E0001074B8 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94A9EBF1D0A19E0001074B8 /* DragImg.swift */; };
+		A95B55EE1D0AB04100E11DE9 /* ImageAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B55ED1D0AB04100E11DE9 /* ImageAnimation.swift */; };
+		A95B56151D0AC78C00E11DE9 /* DinoMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95B56131D0AC78C00E11DE9 /* DinoMain.swift */; };
+		A95B56161D0AC78C00E11DE9 /* DinoMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = A95B56141D0AC78C00E11DE9 /* DinoMain.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A94A9E8B1D09CAB1001074B8 /* raiseYourDino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raiseYourDino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94A9E8E1D09CAB1001074B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A94A9E901D09CAB1001074B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A94A9E931D09CAB1001074B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A94A9E901D09CAB1001074B8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A94A9E951D09CAB1001074B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94A9E981D09CAB1001074B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A94A9E9A1D09CAB1001074B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94A9EA01D09CB08001074B8 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = SOURCE_ROOT; };
+		A94A9EAF1D09CBEC001074B8 /* EggStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EggStatus.swift; sourceTree = "<group>"; };
+		A94A9EB11D09CC05001074B8 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		A94A9EB31D09D2AA001074B8 /* DinoStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinoStats.swift; sourceTree = "<group>"; };
+		A94A9EBB1D09F60B001074B8 /* DinoStats.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinoStats.xib; sourceTree = "<group>"; };
+		A94A9EBF1D0A19E0001074B8 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
+		A95B55ED1D0AB04100E11DE9 /* ImageAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAnimation.swift; sourceTree = "<group>"; };
+		A95B56131D0AC78C00E11DE9 /* DinoMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinoMain.swift; sourceTree = "<group>"; };
+		A95B56141D0AC78C00E11DE9 /* DinoMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DinoMain.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,46 @@
 		A94A9E8D1D09CAB1001074B8 /* raiseYourDino */ = {
 			isa = PBXGroup;
 			children = (
+				A94A9EA41D09CB1E001074B8 /* Model */,
+				A94A9EA31D09CB1A001074B8 /* Controller */,
+				A94A9EA21D09CB16001074B8 /* View */,
 				A94A9E8E1D09CAB1001074B8 /* AppDelegate.swift */,
-				A94A9E901D09CAB1001074B8 /* ViewController.swift */,
-				A94A9E921D09CAB1001074B8 /* Main.storyboard */,
 				A94A9E951D09CAB1001074B8 /* Assets.xcassets */,
 				A94A9E971D09CAB1001074B8 /* LaunchScreen.storyboard */,
 				A94A9E9A1D09CAB1001074B8 /* Info.plist */,
 			);
 			path = raiseYourDino;
+			sourceTree = "<group>";
+		};
+		A94A9EA21D09CB16001074B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A95B56141D0AC78C00E11DE9 /* DinoMain.xib */,
+				A94A9EA01D09CB08001074B8 /* HomeView.xib */,
+				A94A9EBB1D09F60B001074B8 /* DinoStats.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A94A9EA31D09CB1A001074B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A94A9E901D09CAB1001074B8 /* HomeView.swift */,
+				A94A9EAF1D09CBEC001074B8 /* EggStatus.swift */,
+				A94A9EB11D09CC05001074B8 /* Properties.swift */,
+				A94A9EB31D09D2AA001074B8 /* DinoStats.swift */,
+				A94A9EBF1D0A19E0001074B8 /* DragImg.swift */,
+				A95B55ED1D0AB04100E11DE9 /* ImageAnimation.swift */,
+				A95B56131D0AC78C00E11DE9 /* DinoMain.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A94A9EA41D09CB1E001074B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +170,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94A9EBC1D09F60B001074B8 /* DinoStats.xib in Resources */,
 				A94A9E991D09CAB1001074B8 /* LaunchScreen.storyboard in Resources */,
 				A94A9E961D09CAB1001074B8 /* Assets.xcassets in Resources */,
-				A94A9E941D09CAB1001074B8 /* Main.storyboard in Resources */,
+				A94A9EA11D09CB08001074B8 /* HomeView.xib in Resources */,
+				A95B56161D0AC78C00E11DE9 /* DinoMain.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +185,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A94A9E911D09CAB1001074B8 /* ViewController.swift in Sources */,
+				A94A9E911D09CAB1001074B8 /* HomeView.swift in Sources */,
+				A95B55EE1D0AB04100E11DE9 /* ImageAnimation.swift in Sources */,
+				A94A9EB01D09CBEC001074B8 /* EggStatus.swift in Sources */,
+				A94A9EB51D09D2AA001074B8 /* DinoStats.swift in Sources */,
 				A94A9E8F1D09CAB1001074B8 /* AppDelegate.swift in Sources */,
+				A95B56151D0AC78C00E11DE9 /* DinoMain.swift in Sources */,
+				A94A9EC01D0A19E0001074B8 /* DragImg.swift in Sources */,
+				A94A9EB21D09CC05001074B8 /* Properties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A94A9E921D09CAB1001074B8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A94A9E931D09CAB1001074B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A94A9E971D09CAB1001074B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +336,7 @@
 				A94A9E9F1D09CAB1001074B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

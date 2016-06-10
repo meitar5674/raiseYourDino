@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DinoStats" customModule="raiseYourDino" customModuleProvider="target">
+            <connections>
+                <outlet property="happinessBar" destination="TNW-AL-HAT" id="nt4-Vt-0hg"/>
+                <outlet property="happinessStatus" destination="MoP-K1-XZJ" id="eB7-i7-Mdk"/>
+                <outlet property="hungerBar" destination="11P-jF-42H" id="1Of-b1-lSd"/>
+                <outlet property="hungerStatus" destination="Yp1-hc-7jE" id="q8N-Xi-6uA"/>
+                <outlet property="loveBar" destination="qRy-eP-K0q" id="1BT-At-hld"/>
+                <outlet property="loveStatus" destination="9P5-rw-Dcg" id="cMw-mn-kxz"/>
+                <outlet property="view" destination="xmO-nr-NFa" id="D8K-0r-OqW"/>
+                <outlet property="warmthBar" destination="8Sb-qK-sHL" id="oIE-BH-3TH"/>
+                <outlet property="warmthStatus" destination="KAc-J2-MDn" id="cWm-bS-kav"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xmO-nr-NFa">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y11-3w-NRk">
+                    <rect key="frame" x="262" y="19" width="77" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="hdx-av-JaM"/>
+                        <constraint firstAttribute="height" constant="21" id="iJo-ju-x4v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="23"/>
+                    <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hdx-av-JaM"/>
+                            <exclude reference="iJo-ju-x4v"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="hdx-av-JaM"/>
+                            <include reference="iJo-ju-x4v"/>
+                        </mask>
+                    </variation>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-8t-GAb" userLabel="Love View">
+                    <rect key="frame" x="-12" y="48" width="285" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Love: 100.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P5-rw-Dcg">
+                            <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
+                            <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-eP-K0q">
+                            <rect key="frame" x="177" y="0.0" width="110" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="uy4-ki-hOM"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="uy4-ki-hOM"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="288" y="0.0" width="94" height="31"/>
+                                <mask key="constraints">
+                                    <include reference="uy4-ki-hOM"/>
+                                </mask>
+                            </variation>
+                        </slider>
+                    </subviews>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="8" y="70" width="380" height="30"/>
+                    </variation>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="XgE-bC-bxa" userLabel="Happiness View">
+                    <rect key="frame" x="-12" y="128" width="305" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Happines:100.o" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoP-K1-XZJ">
+                            <rect key="frame" x="0.0" y="0.0" width="199" height="30"/>
+                            <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="66" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TNW-AL-HAT">
+                            <rect key="frame" x="197" y="0.0" width="110" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="U6X-TH-QL5"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="U6X-TH-QL5"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="308" y="0.0" width="94" height="31"/>
+                                <mask key="constraints">
+                                    <include reference="U6X-TH-QL5"/>
+                                </mask>
+                            </variation>
+                        </slider>
+                    </subviews>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="8" y="150" width="400" height="30"/>
+                    </variation>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bok-Fj-05i" userLabel="Warmth View">
+                    <rect key="frame" x="-12" y="208" width="321" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Warmth: 100.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-J2-MDn">
+                            <rect key="frame" x="0.0" y="0.0" width="195" height="30"/>
+                            <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8Sb-qK-sHL">
+                            <rect key="frame" x="213" y="0.0" width="110" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="BnJ-Np-eZp"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="BnJ-Np-eZp"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="298" y="0.0" width="94" height="31"/>
+                                <mask key="constraints">
+                                    <include reference="BnJ-Np-eZp"/>
+                                </mask>
+                            </variation>
+                        </slider>
+                    </subviews>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="8" y="230" width="390" height="30"/>
+                    </variation>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dEt-7G-XEt" userLabel="Hunger View">
+                    <rect key="frame" x="-12" y="288" width="292" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hunger: 100.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp1-hc-7jE">
+                            <rect key="frame" x="0.0" y="0.0" width="186" height="30"/>
+                            <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="11P-jF-42H">
+                            <rect key="frame" x="184" y="0.0" width="110" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="lcD-zv-uJH"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="lcD-zv-uJH"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="288" y="0.0" width="94" height="31"/>
+                                <mask key="constraints">
+                                    <include reference="lcD-zv-uJH"/>
+                                </mask>
+                            </variation>
+                        </slider>
+                    </subviews>
+                    <variation key="widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="8" y="310" width="380" height="30"/>
+                    </variation>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeS-1p-6RP">
+                    <rect key="frame" x="201" y="516" width="198" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="198" id="2TU-LX-p3a"/>
+                        <constraint firstAttribute="height" constant="39" id="ubJ-BW-odY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="Return to Main Page"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2TU-LX-p3a"/>
+                            <exclude reference="ubJ-BW-odY"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="2TU-LX-p3a"/>
+                            <include reference="ubJ-BW-odY"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="ReturnToMain:" destination="-1" eventType="touchUpInside" id="hJW-3l-S2I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dEt-7G-XEt" firstAttribute="leading" secondItem="xmO-nr-NFa" secondAttribute="leading" constant="10" id="07S-6b-cL5"/>
+                <constraint firstItem="oyv-8t-GAb" firstAttribute="leading" secondItem="xmO-nr-NFa" secondAttribute="leading" constant="10" id="480-rE-eiF"/>
+                <constraint firstItem="Bok-Fj-05i" firstAttribute="leading" secondItem="xmO-nr-NFa" secondAttribute="leading" constant="5" id="5sZ-Nn-LnW"/>
+                <constraint firstAttribute="trailing" secondItem="oyv-8t-GAb" secondAttribute="trailing" constant="10" id="9HC-Re-29k"/>
+                <constraint firstItem="oyv-8t-GAb" firstAttribute="top" secondItem="y11-3w-NRk" secondAttribute="bottom" constant="30" id="D6Z-Hf-wzw"/>
+                <constraint firstAttribute="trailing" secondItem="Bok-Fj-05i" secondAttribute="trailing" constant="5" id="Ead-su-yzw"/>
+                <constraint firstItem="y11-3w-NRk" firstAttribute="centerX" secondItem="xmO-nr-NFa" secondAttribute="centerX" id="Vez-B4-KfM"/>
+                <constraint firstItem="dEt-7G-XEt" firstAttribute="top" secondItem="Bok-Fj-05i" secondAttribute="bottom" constant="50" id="Viv-Ou-myn"/>
+                <constraint firstAttribute="trailing" secondItem="dEt-7G-XEt" secondAttribute="trailing" constant="10" id="e11-Sv-Im8"/>
+                <constraint firstAttribute="bottom" secondItem="ZeS-1p-6RP" secondAttribute="bottom" constant="45" id="hzi-Vj-Pal"/>
+                <constraint firstItem="Bok-Fj-05i" firstAttribute="top" secondItem="XgE-bC-bxa" secondAttribute="bottom" constant="50" id="jTo-S7-GWr"/>
+                <constraint firstItem="ZeS-1p-6RP" firstAttribute="centerX" secondItem="xmO-nr-NFa" secondAttribute="centerX" id="ofv-0R-iDN"/>
+                <constraint firstItem="XgE-bC-bxa" firstAttribute="top" secondItem="oyv-8t-GAb" secondAttribute="bottom" constant="50" id="sdE-zk-9fh"/>
+                <constraint firstItem="y11-3w-NRk" firstAttribute="top" secondItem="xmO-nr-NFa" secondAttribute="top" constant="19" id="tUx-Ge-Vfb"/>
+                <constraint firstItem="XgE-bC-bxa" firstAttribute="leading" secondItem="xmO-nr-NFa" secondAttribute="leading" id="w4c-zP-lxe"/>
+                <constraint firstAttribute="trailing" secondItem="XgE-bC-bxa" secondAttribute="trailing" id="wGe-e9-RfL"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="480-rE-eiF"/>
+                    <exclude reference="9HC-Re-29k"/>
+                    <exclude reference="D6Z-Hf-wzw"/>
+                    <exclude reference="sdE-zk-9fh"/>
+                    <exclude reference="w4c-zP-lxe"/>
+                    <exclude reference="wGe-e9-RfL"/>
+                    <exclude reference="5sZ-Nn-LnW"/>
+                    <exclude reference="Ead-su-yzw"/>
+                    <exclude reference="jTo-S7-GWr"/>
+                    <exclude reference="Vez-B4-KfM"/>
+                    <exclude reference="tUx-Ge-Vfb"/>
+                    <exclude reference="07S-6b-cL5"/>
+                    <exclude reference="Viv-Ou-myn"/>
+                    <exclude reference="e11-Sv-Im8"/>
+                    <exclude reference="hzi-Vj-Pal"/>
+                    <exclude reference="ofv-0R-iDN"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="480-rE-eiF"/>
+                    <include reference="9HC-Re-29k"/>
+                    <include reference="D6Z-Hf-wzw"/>
+                    <include reference="sdE-zk-9fh"/>
+                    <include reference="w4c-zP-lxe"/>
+                    <include reference="wGe-e9-RfL"/>
+                    <include reference="5sZ-Nn-LnW"/>
+                    <include reference="Ead-su-yzw"/>
+                    <include reference="jTo-S7-GWr"/>
+                    <include reference="Vez-B4-KfM"/>
+                    <include reference="tUx-Ge-Vfb"/>
+                    <include reference="07S-6b-cL5"/>
+                    <include reference="Viv-Ou-myn"/>
+                    <include reference="e11-Sv-Im8"/>
+                    <include reference="hzi-Vj-Pal"/>
+                    <include reference="ofv-0R-iDN"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="386" y="474"/>
+        </view>
+    </objects>
+</document>
