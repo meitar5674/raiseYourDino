@@ -11,7 +11,7 @@ import UIKit
 class DinoMain: UIViewController {
     
     
-    @IBOutlet weak var eggImg: UIImageView!
+    @IBOutlet weak var eggImg: ImageAnimation!
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var meatImg: DragImg!
     @IBOutlet weak var boneImg: DragImg!
@@ -19,6 +19,7 @@ class DinoMain: UIViewController {
     @IBOutlet weak var fireImg: DragImg!
     @IBOutlet weak var expSlider: UISlider!
     @IBOutlet weak var expLabel: UILabel!
+    
     var player: EggStatus!
     var dinoStats: DinoStats!
     
@@ -41,9 +42,11 @@ class DinoMain: UIViewController {
     func itemDroppedOnCharacter(notif: AnyObject){
         print("Moo")
     }
-
+    
     @IBAction func checkStats(sender: AnyObject) {
         dinoStats = DinoStats(nibName: "DinoStats", bundle: nil)
+        dinoStats.player1 = player
+        
         self.presentViewController(dinoStats, animated: true, completion: nil)
     }
     

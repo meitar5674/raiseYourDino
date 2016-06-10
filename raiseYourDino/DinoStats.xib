@@ -46,7 +46,7 @@
                     </variation>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oyv-8t-GAb" userLabel="Love View">
-                    <rect key="frame" x="-12" y="48" width="285" height="30"/>
+                    <rect key="frame" x="-12" y="48" width="289" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Love: 100.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P5-rw-Dcg">
                             <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
@@ -55,7 +55,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="qRy-eP-K0q">
-                            <rect key="frame" x="177" y="0.0" width="110" height="31"/>
+                            <rect key="frame" x="177" y="0.0" width="114" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="uy4-ki-hOM"/>
                             </constraints>
@@ -64,8 +64,7 @@
                                     <exclude reference="uy4-ki-hOM"/>
                                 </mask>
                             </variation>
-                            <variation key="widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="288" y="0.0" width="94" height="31"/>
+                            <variation key="widthClass=compact">
                                 <mask key="constraints">
                                     <include reference="uy4-ki-hOM"/>
                                 </mask>
@@ -77,7 +76,7 @@
                     </variation>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="XgE-bC-bxa" userLabel="Happiness View">
-                    <rect key="frame" x="-12" y="128" width="305" height="30"/>
+                    <rect key="frame" x="-12" y="128" width="309" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Happines:100.o" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoP-K1-XZJ">
                             <rect key="frame" x="0.0" y="0.0" width="199" height="30"/>
@@ -86,7 +85,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="66" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TNW-AL-HAT">
-                            <rect key="frame" x="197" y="0.0" width="110" height="31"/>
+                            <rect key="frame" x="197" y="0.0" width="114" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="U6X-TH-QL5"/>
                             </constraints>
@@ -95,8 +94,7 @@
                                     <exclude reference="U6X-TH-QL5"/>
                                 </mask>
                             </variation>
-                            <variation key="widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="308" y="0.0" width="94" height="31"/>
+                            <variation key="widthClass=compact">
                                 <mask key="constraints">
                                     <include reference="U6X-TH-QL5"/>
                                 </mask>
@@ -108,7 +106,7 @@
                     </variation>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bok-Fj-05i" userLabel="Warmth View">
-                    <rect key="frame" x="-12" y="208" width="321" height="30"/>
+                    <rect key="frame" x="-12" y="208" width="325" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Warmth: 100.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-J2-MDn">
                             <rect key="frame" x="0.0" y="0.0" width="195" height="30"/>
@@ -117,7 +115,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8Sb-qK-sHL">
-                            <rect key="frame" x="213" y="0.0" width="110" height="31"/>
+                            <rect key="frame" x="213" y="0.0" width="114" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="BnJ-Np-eZp"/>
                             </constraints>
@@ -126,8 +124,7 @@
                                     <exclude reference="BnJ-Np-eZp"/>
                                 </mask>
                             </variation>
-                            <variation key="widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="298" y="0.0" width="94" height="31"/>
+                            <variation key="widthClass=compact">
                                 <mask key="constraints">
                                     <include reference="BnJ-Np-eZp"/>
                                 </mask>
@@ -139,7 +136,7 @@
                     </variation>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dEt-7G-XEt" userLabel="Hunger View">
-                    <rect key="frame" x="-12" y="288" width="292" height="30"/>
+                    <rect key="frame" x="-12" y="288" width="296" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hunger: 100.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp1-hc-7jE">
                             <rect key="frame" x="0.0" y="0.0" width="186" height="30"/>
@@ -148,7 +145,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="11P-jF-42H">
-                            <rect key="frame" x="184" y="0.0" width="110" height="31"/>
+                            <rect key="frame" x="184" y="0.0" width="114" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="lcD-zv-uJH"/>
                             </constraints>
@@ -157,8 +154,7 @@
                                     <exclude reference="lcD-zv-uJH"/>
                                 </mask>
                             </variation>
-                            <variation key="widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="288" y="0.0" width="94" height="31"/>
+                            <variation key="widthClass=compact">
                                 <mask key="constraints">
                                     <include reference="lcD-zv-uJH"/>
                                 </mask>

@@ -9,7 +9,7 @@
 
 import UIKit
 
-class DinoStats: DinoMain {
+class DinoStats: UIViewController {
     
     @IBOutlet weak var loveStatus: UILabel!
     @IBOutlet weak var happinessStatus: UILabel!
@@ -20,8 +20,10 @@ class DinoStats: DinoMain {
     @IBOutlet weak var hungerBar: UISlider!
     @IBOutlet weak var warmthBar: UISlider!
     
+
     var dinoMain: DinoMain!
     var updateTimer: NSTimer!
+    var player1: EggStatus!
     
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -33,12 +35,13 @@ class DinoStats: DinoMain {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         minMaxValues()
-        player.HungerTimer()
-        player.WarmthTimer()
-        player.LoveTimer()
-        player.HapinessTimer()
+        player1.HungerTimer()
+        player1.WarmthTimer()
+        player1.LoveTimer()
+        player1.HapinessTimer()
         setBar()
         UpdateTimer()
     }
@@ -52,10 +55,10 @@ class DinoStats: DinoMain {
     
     
     func setBar(){
-        loveBar.value = Float(player.love)
-        warmthBar.value = Float(player.warmth)
-        happinessBar.value = Float(player.happiness)
-        hungerBar.value = Float(player.hunger)
+        loveBar.value = Float(player1.love)
+        warmthBar.value = Float(player1.warmth)
+        happinessBar.value = Float(player1.happiness)
+        hungerBar.value = Float(player1.hunger)
         setStatus()
         
     }
@@ -77,14 +80,14 @@ class DinoStats: DinoMain {
     }
     
     func minMaxValues(){
-        loveBar.maximumValue = Float(player.MAX_LOVE)
-        loveBar.minimumValue = Float(player.MIN_LOVE)
-        happinessBar.maximumValue = Float(player.MAX_HAPPINESS)
-        happinessBar.minimumValue = Float(player.MIN_HAPPINESS)
-        hungerBar.maximumValue = Float(player.MAX_HUNGER)
-        hungerBar.minimumValue = Float(player.MIN_HUNGER)
-        warmthBar.maximumValue = Float(player.MAX_WARMTH)
-        warmthBar.minimumValue = Float(player.MIN_WARMTH)
+        loveBar.maximumValue = Float(player1.MAX_LOVE)
+        loveBar.minimumValue = Float(player1.MIN_LOVE)
+        happinessBar.maximumValue = Float(player1.MAX_HAPPINESS)
+        happinessBar.minimumValue = Float(player1.MIN_HAPPINESS)
+        hungerBar.maximumValue = Float(player1.MAX_HUNGER)
+        hungerBar.minimumValue = Float(player1.MIN_HUNGER)
+        warmthBar.maximumValue = Float(player1.MAX_WARMTH)
+        warmthBar.minimumValue = Float(player1.MIN_WARMTH)
     }
     
 }
